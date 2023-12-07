@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+body {
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style-type: none;
+  outline: none;
+  background-image: url(image/background.jpg);
+
+  background-size: cover;
+}
+#header {
+  position: sticky;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 40px;
+  background: rgb(49, 41, 41);
+
+  z-index: 999;
+
+  top: 0;
+  left: 0;
+}
+#nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#nav li {
+  list-style: none;
+  padding: 0 10px;
+  position: relative;
+}
+#nav li a {
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 600;
+  color: white;
+}
+#nav-search-in {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#nav-search-in li {
+  list-style: none;
+  padding: 0 20px;
+  position: relative;
+}
+#nav-search-in li a {
+  text-decoration: none;
+  font-size: 28px;
+  font-weight: 600;
+  color: white;
+}
+
+.container {
+  width: 100%;
+  margin: 1em auto;
+  background-color: transparent;
+}
+.grid {
+  display: grid;
+  margin-left: -5px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 2em;
+  justify-content: center;
+}
+h2 {
+  background-color: antiquewhite;
+}
+.copyright {
+  width: 100%;
+  text-align: center;
+  height: 80px;
+  align-items: center;
+
+  display: flex;
+  justify-content: center;
+
+  background: rgb(49, 41, 41);
+}
+.copyright {
+  bottom: 0;
+}
+
+footer .copyright p {
+  color: white;
+}
+
+@media (max-width: 799px) {
+  #header {
+    padding: 10px 10px;
+  }
+  #nav li {
+    padding: 0px 0px;
+  }
+}
+@media (max-width: 477px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  ol,
+  ul {
+    padding-left: 0px;
+  }
+  #nav-search-in li {
+    padding: 0px;
+  }
+  .head {
+    display: none;
+  }
+}

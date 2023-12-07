@@ -1,0 +1,17 @@
+.backgr-image {
+  color: transparent;
+}
+.movie-img {
+  width: 100%;
+}
+.view-button {
+  width: 100%;
+  height: 5vh;
+  color: white;
+  background-color: rgb(16, 165, 16);
+  border: none;
+  transition: 0.5s;
+}
+.view-button:hover {
+  background-color: rgb(10, 78, 10);
+}
